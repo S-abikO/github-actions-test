@@ -10,20 +10,20 @@ on:
 
 jobs:
   readme-test:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: action/checkout@v3
-      with:
-        persist-credentials: false
-        fetch-depth: 0
-    - name: Ser up Python
-    - name: Install dependency
-    - name: Markdown
-    - name: Check modified
-    - name: Commit fies
-    - name: Set up Python
-      uses: actions/setup-python@v4
-    - name: Install dependency
-      run: pip install pytest
-    - name: Test with pytest
-      run: pytest test_src
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Ser up Python
+      - name: Install dependency
+      - name: Markdown
+      - name: Check modified
+      - name: Commit fies
+      - name: Set up Python
+        uses: actions/setup-python@v4
+      - name: Install dependency
+        run: pip install pytest
+      - name: Test with pytest
+        run: pytest test_src
